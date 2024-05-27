@@ -1,0 +1,30 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    color:orange;
+    align-self: self-end;
+}
+div{
+    align-self: self-start;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    
+}
+h1,p{
+    font-family: cursive;
+}
+img{
+    width: 100px;
+}
