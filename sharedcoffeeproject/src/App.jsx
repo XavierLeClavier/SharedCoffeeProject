@@ -2,7 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import './App.css';
+import './index.css';
 
 import Accueil from './pages/Accueil';
 import Map from './pages/Map';
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>      
-      <div>
+      <div className='bg-slate-300'>
         {/* <Header /> */}
         <main>
           <Routes>
