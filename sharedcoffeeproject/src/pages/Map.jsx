@@ -1,18 +1,32 @@
-import React, { useEffect } from 'react';
-import L from 'leaflet';
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
 
-const Map = () => {
-    useEffect(() => {
-        const map = L.map('map').setView([45.7640, 4.8357], 12); // Coordonnées de Lyon
-
-        L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-        }).addTo(map);
-
-        return () => map.remove();
-    }, []);
-
-    return <div id="map" style={{ width: '400px', height: '400px' }}></div>;
+const CarteXavier = () => {
+    return (
+        <MapContainer center={[45.74846000, 4.84671000]} zoom={13} scrollWheelZoom={false} className="w-full h-96">   
+            <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[45.74846000, 4.84671000]}>
+                <Popup>
+                    Here we write<br />the infos of the coffeshop     
+                </Popup>
+            </Marker>
+        </MapContainer>
+    );
 };
+
+function Map() {
+    return (
+        <div>
+            <h1 className="text-xl font-bold mb-4">Map</h1> {/* Tailwind for styling the heading */}
+            <div className="flex justify-center items-center">
+                <CarteXavier />
+            </div>
+        </div>
+    );
+}
 
 export default Map;
