@@ -8,6 +8,8 @@ import Footer from './elements/Footer';
 import Accueil from './pages/Accueil';
 import Map from './pages/Map';
 import Contact from './pages/Contact';
+import Submitted from './pages/Submitted';
+import Donate from './pages/Donate';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,8 @@ function App() {
             <Route path="/" element={<Accueil />} />
             <Route path="/map" element={<Map />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/submitted" element={<Submitted />} />
+            <Route path="/donate" element={<Donate />} />
           </Routes>
         </main>
         <Footer />

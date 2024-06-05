@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 export default function Footer() {
   return (
     <footer className="bg-[#c7b474] text-center text-white dark:bg-neutral-600">
-      <div className="container pt-9">
+      <div className="container pt-9 mx-auto">
         <div className="mb-9 flex justify-center">
           <a href='https://www.facebook.com/cafesuspendulyon/' className="mr-9 text-neutral-800 dark:text-neutral-200">
             <svg

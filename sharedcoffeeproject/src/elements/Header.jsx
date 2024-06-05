@@ -6,9 +6,9 @@ import logo from '../img/logo.png';
 function Header() {
     return (
         <nav className="w-full bg-[#c7b474] py-2 shadow-dark-mild dark:bg-neutral-700 lg:py-4">
-            <div className="flex w-full flex-wrap items-center justify-between px-3">
+            <div className="flex w-full flex-wrap items-center justify-between px-3 ">
                 <div>
-                    <Link className="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" to="/">
+                    <Link className="mx-2 my-1 hidden items-center lg:mb-0 lg:mt-0 md:flex" to="/">
                         <img
                             src={logo}
                             className="h-20 transform hover:scale-110 transition duration-300 ease-in-out"
@@ -24,7 +24,7 @@ function Header() {
                             data-twe-ripple-init
                             data-twe-ripple-color="light"
                             
-                            className="me-3 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong transform hover:scale-105">
+                            className="me-3 inline-block rounded bg-gradient-to-r to-green-600 from-blue-600 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong transform hover:scale-105">
                             Check out our map
                         </button>
                     </Link>
@@ -34,7 +34,16 @@ function Header() {
                         data-twe-ripple-init
                         data-twe-ripple-color="light"
                         class="me-3 inline-block rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-secondary-600 dark:hover:text-secondary-500 dark:focus:text-secondary-500 dark:active:text-secondary-500">
-                        About
+                        Home
+                    </button>
+                    </Link>
+                    <Link to='/donate'>
+                    <button
+                        type="button"
+                        data-twe-ripple-init
+                        data-twe-ripple-color="light"
+                        class="me-3 inline-block rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-secondary-600 dark:hover:text-secondary-500 dark:focus:text-secondary-500 dark:active:text-secondary-500">
+                        Donate
                     </button>
                     </Link>
                     <Link to='/contact'>
@@ -44,9 +53,9 @@ function Header() {
                         data-twe-ripple-color="light"
                         className="me-3 inline-block rounded px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-secondary-600 dark:hover:text-secondary-500 dark:focus:text-secondary-500 dark:active:text-secondary-500">
                         Contact
-                    </button>   
+                    </button>       
                     </Link>
-                    <a href='https://www.github.com/XavierLeClavier/SharedCoffeeProject' target='_blank' rel='noreferrer'>
+                    <a href='https://www.github.com/XavierLeClavier/SharedCoffeeProject' target='_blank' rel='noreferrer' className='hidden md:block'>
                         <button
                             type="button"
                             data-twe-ripple-init
