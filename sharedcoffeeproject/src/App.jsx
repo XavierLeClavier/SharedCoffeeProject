@@ -4,6 +4,7 @@ import './index.css';
 
 import Header from './elements/Header';
 import Footer from './elements/Footer';
+
 import Accueil from './pages/Accueil';
 import Map from './pages/Map';
 import Contact from './pages/Contact';
@@ -13,10 +14,10 @@ function App() {
 
   return (
     <BrowserRouter>      
-      <div className='bg-secondary'>
+      <div className='bg-[#f8ff74]'>
         <Header />
         <main>
-          <Routes>
+          <Routes>  
             <Route path="/" element={<Accueil />} />
             <Route path="/map" element={<Map />} />
             <Route path="/contact" element={<Contact />} />
