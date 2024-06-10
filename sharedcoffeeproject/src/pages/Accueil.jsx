@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../index.css';
 
+import InstagramFeed from '../elements/InstagramFeed';
 import LinkButton from '../elements/LinkButton';
 import LeftImageText from '../elements/LeftImageText';
 import RightImageText from '../elements/RightImageText';
@@ -90,6 +91,9 @@ function Accueil() {
                         </p></>}
                 />
             </section>
+            {/* <section>
+                <InstagramFeed />
+            </section> */}
         </div>
     );
 }
